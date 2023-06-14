@@ -1,0 +1,118 @@
+{
+  "block_v1": {
+    "payload": {
+      "transactions": [
+        {
+          "payload": {
+            "reducedPayload": {
+              "commands": [
+                {
+                  "addPeer": {
+                    "peer": {
+                      "address": "iroha_node_0:10001",
+                      "peerKey": "17611628283c1e896e7afb55f0acf42676b939d4b06b2e23a71e73d37be40dc4"
+                    }
+                  }
+                },
+                {
+                  "addPeer": {
+                    "peer": {
+                      "address": "iroha_node_1:10001",
+                      "peerKey": "204f841f731cb1eccc2a14ce50d611508f723f03599628b921923e21e26e96d2"
+                    }
+                  }
+                },
+                {
+                  "addPeer": {
+                    "peer": {
+                      "address": "iroha_node_2:10001",
+                      "peerKey": "a792141d5f308108059b125f6bd423b8164279a380ff47bbbc16ac27e40ae34b"
+                    }
+                  }
+                },
+                {
+                  "addPeer": {
+                    "peer": {
+                      "address": "iroha_node_3:10001",
+                      "peerKey": "116ddf90b7633c0aa815543b93747c235671e6446fbe1ef7e9060ef3341f8760"
+                    }
+                  }
+                },
+                {
+                  "createRole": {
+                    "roleName": "admin",
+                    "permissions": [
+                      "can_add_peer",
+                      "can_add_signatory",
+                      "can_create_account",
+                      "can_create_domain",
+                      "can_get_all_acc_ast",
+                      "can_get_all_acc_ast_txs",
+                      "can_get_all_acc_detail",
+                      "can_get_all_acc_txs",
+                      "can_get_all_accounts",
+                      "can_get_all_signatories",
+                      "can_get_all_txs",
+                      "can_get_blocks",
+                      "can_get_roles",
+                      "can_read_assets",
+                      "can_remove_signatory",
+                      "can_set_quorum",
+                      "can_add_asset_qty",
+                      "can_create_asset",
+                      "can_receive",
+                      "can_transfer"
+                    ]
+                  }
+                },
+                {
+                  "createRole": {
+                    "roleName": "user",
+                    "permissions": [
+                      "can_add_signatory",
+                      "can_get_my_acc_ast",
+                      "can_get_my_acc_ast_txs",
+                      "can_get_my_acc_detail",
+                      "can_get_my_acc_txs",
+                      "can_get_my_account",
+                      "can_get_my_signatories",
+                      "can_get_my_txs",
+                      "can_grant_can_add_my_signatory",
+                      "can_grant_can_remove_my_signatory",
+                      "can_grant_can_set_my_account_detail",
+                      "can_grant_can_set_my_quorum",
+                      "can_grant_can_transfer_my_assets",
+                      "can_receive",
+                      "can_remove_signatory",
+                      "can_set_quorum",
+                      "can_transfer"
+                    ]
+                  }
+                },
+                {
+                  "createDomain": {
+                    "domainId": "test",
+                    "defaultRole": "user"
+                  }
+                },
+                {
+                  "createAccount": {
+                    "accountName": "admin",
+                    "domainId": "test",
+                    "publicKey": "313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910"
+                  }
+                },
+                {
+                  "appendRole": {
+                    "accountId": "admin@test",
+                    "roleName": "admin"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
